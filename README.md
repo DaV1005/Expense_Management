@@ -68,15 +68,15 @@ Installation
 
 ------------
 
-1\.  bashCopy codegit clone https://github.com/yourusername/expenses-management-system.git
+1\.  git clone [https://github.com/yourusername/expenses-management-system.git](https://github.com/DaV1005/Expense_Management.git)
 
-2\.  bashCopy codecd expenses-management-system
+2\.  cd expenses-management-system
 
 3\.  **Install dependencies for both frontend and backend**:
 
-    *   bashCopy codecd backendnpm install
+    *  cd backend npm install
 
-    *   bashCopy codecd ../frontendnpm install
+    *  cd ../frontend npm install
 
 4\.  **Set up environment variables** (see [Environment Variables](#environment-variables) section for details).
 
@@ -86,7 +86,10 @@ Environment Variables
 
 Create a .env file in the backend/ directory and add the following:
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   plaintextCopy codeMONGO_URI=your_mongo_database_uri  JWT_SECRET=your_jwt_secret  PORT=5555   `
+MONGO_URI = your_mongo_database_uri
+JWT_SECRET = your_jwt_secret
+PORT = 5555
+
 
 *   MONGO\_URI: MongoDB connection string.
 
@@ -98,11 +101,10 @@ Usage
 
 -----
 
-1\.  bashCopy codecd backendnpm start
+1\.  cd backend npm run dev
 
-2\.  bashCopy codecd frontendnpm start
+2\. cd frontend npm run dev
 
-3\.  **Access the application**:Open a browser and navigate to http://localhost:3000.
 
 API Endpoints
 
@@ -124,14 +126,3 @@ API Endpoints
 
 *   DELETE /api/expenses/:id: Delete an expense.
 
-Project Structure
-
------------------
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   plaintextCopy codeexpenses-management-system/  ├── backend/  │   ├── controllers/  │   ├── models/  │   ├── routes/  │   ├── middleware/  │   ├── .env  │   └── server.js  ├── frontend/  │   ├── src/  │   ├── public/  │   └── package.json  └── README.md   `
-
-License
-
--------
-
-This project is licensed under the MIT License.
