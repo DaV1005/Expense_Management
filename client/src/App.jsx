@@ -2,7 +2,7 @@ import './App.css'
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route  } from 'react-router-dom';
 
-import Expense from './pages/Expense'
+import Expense from './pages/ExpensesManagement'
 import Signup from './pages/Signup';
 import Login from './pages/Login';
 import Logout from './pages/Logout';
